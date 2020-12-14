@@ -1,0 +1,24 @@
+CREATE TABLE `auto` (
+ 'auto_id' int(11) NOT NULL,
+ 'merk' varchar(25) NOT NULL,
+ 'type' varchar(20) NOT NULL,
+ 'active' varchar(1) NOT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='de morgan';
+
+
+ ALTER TABLE `auto`
+ ADD PRIMARY KEY ('auto_id');
+
+ INSERT INTO `auto` ('auto id', 'merk', 'type', 'active') VALUES
+ (1, 'Mercedes', 'truck' , 'Y'),
+ (2, 'Scania', 'truck' , 'Y'),
+ (3, 'VW', 'car', 'Y'),
+ (4, 'Opel', 'car' , 'Y'),
+ (5, 'Honda', 'motor', 'Y'),
+ (6, 'Vivaro', 'scooter' , 'Y');
+
+ALTER TABLE `auto`
+MODIFY 'auto_id' int(11) NOT NULL AUTO INCREMENT, AUTO INCREMENT = 7
+
+
+2 quiry's voor de auto table die allebij het zelfde moeten laten zien
